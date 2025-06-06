@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Библиотека</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .section {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        input, button, select {
+            margin: 5px 0;
+            padding: 8px;
+            width: 100%;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Система учета книг</h1>
+
+    <div class="section">
+        <h2>Добавить книгу</h2>
+        <input type="text" id="title" placeholder="Название книги">
+        <input type="text" id="author" placeholder="Автор">
+        <input type="text" id="genre" placeholder="Жанр">
+        <input type="number" id="year" placeholder="Год">
+        <input type="number" id="copies" placeholder="Количество экземпляров">
+        <button onclick="addBook()">Добавить</button>
+    </div>
+
+    <div class="section">
+        <h2>Зарегистрировать читателя</h2>
+        <input type="text" id="reader_name" placeholder="ФИО">
+        <input type="text" id="reader_phone" placeholder="Телефон">
+        <input type="email" id="reader_email" placeholder="Email">
+        <button onclick="addReader()">Зарегистрировать</button>
+    </div>
+
+    <div class="section">
+        <h2>Выдать книгу</h2>
+        <input type="number" id="book_id" placeholder="ID книги">
+        <input type="number" id="reader_id" placeholder="ID читателя">
+        <button onclick="issueBook()">Выдать</button>
+    </div>
+
+    <div class="section">
+        <h2>Вернуть книгу</h2>
+        <input type="number" id="loan_id" placeholder="ID выдачи">
+        <button onclick="returnBook()">Вернуть</button>
+    </div>
+
+    <script>
+        function addBook() {
+            alert("Запрос на добавление книги отправлен (нужна серверная часть).");
+        }
+
+        function addReader() {
+            alert("Запрос на регистрацию читателя отправлен.");
+        }
+
+        function issueBook() {
+            alert("Выдача книги (имитация).");
+        }
+
+        function returnBook() {
+            alert("Возврат книги (имитация).");
+        }
+    </script>
+
+</body>
+</html>
